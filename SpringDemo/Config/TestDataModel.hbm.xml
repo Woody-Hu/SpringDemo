@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<hibernate-mapping assembly="SpringDemo" namespace="SpringDemo.Models" xmlns="urn:nhibernate-mapping-2.2">
+
+  <class name="TestDataModel" table="testDataModel" schema="nhibernate">
+
+    <id name="Id" type="Int32">
+
+      <column name="Id" not-null="true" precision="10" scale="0" sql-type="int" />
+
+      <generator class="identity" />
+
+    </id>
+
+    <property name="Value" type="String">
+
+      <column name="Value" not-null="false" length="50" sql-type="varchar" />
+
+    </property>
+
+  </class>
+
+</hibernate-mapping>
